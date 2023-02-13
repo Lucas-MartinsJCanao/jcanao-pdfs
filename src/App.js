@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from './components/AppBar';
-
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
+import Stack from '@mui/material/Stack';
 
 function App() {
   return (
@@ -18,10 +21,18 @@ function App() {
       backgroundColor: 'white',
       
     }}>
-
     </div>
-    <div>
-      
+    <div 
+    style = {{
+      margin: 'auto',
+      width: '50%',
+      marginTop: '2%',
+    }}>
+       <Stack direction="row" spacing={2}>
+      <Button variant="contained" endIcon={<SendIcon />}>
+        Send
+      </Button>
+    </Stack>
     </div>
     </div>
     
